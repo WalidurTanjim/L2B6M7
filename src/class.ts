@@ -34,15 +34,15 @@
 
 // Parameter properties
 class Animal {
-    constructor(public name: string, public species: string, public sound: string){};
+    constructor(public name: string, public species: string, public sound: string) {};
 
-    makeSound(){
-        console.log(`${this.name} making sound ${this.sound}`);
+    makeSound() {
+        console.log(`${this.name} is making ${this.sound} sound.`);
     }
 }
 
-const cat = new Animal("Cat", "Cat", "Mew Mew");
-const dog = new Animal("Dog", "Dog", "Gheu Gheu");
+const cat = new Animal('Cat', 'Cat', 'Mew Mew');
+const dog = new Animal('Dog', 'Dog', 'Ghew Ghew');
+console.log(cat, dog);
 cat.makeSound();
 dog.makeSound();
-console.log(cat.name);
