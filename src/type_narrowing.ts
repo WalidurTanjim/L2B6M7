@@ -83,7 +83,7 @@ type AdminUser = {
     role: "Admin" | "Mod";
 }
 
-const getUserInfo = (user: NormalUser | AdminUser) => {
+const getUserInfo = (user: NormalUser | AdminUser): void => {
     if("role" in user){
         console.log(`${user.name} is a ${user.role}`);
     }else console.log(`${user.name} is just a normal user`);
@@ -91,3 +91,13 @@ const getUserInfo = (user: NormalUser | AdminUser) => {
 
 getUserInfo({ name: "Walidur Tanjim" });
 getUserInfo({ name: "Walidur Rahman Tanjim", role: "Admin" });
+
+
+// This is not important. It's just only practice purpose (Type Narrowing with Generics)
+const getUserInfoGenerics = <T extends NormalUser | AdminUser>(user: T): void => {
+    if("role" in user){
+        console.log(`${user.name} is a ${user.role}`);
+    }else console.log(`${user.name} is just a normal user`);
+}
+getUserInfoGenerics<NormalUser>({ name: "Walidur Tanjim" });
+getUserInfoGenerics<AdminUser>({ name: "Walidur Tanjim", role: "Admin" });

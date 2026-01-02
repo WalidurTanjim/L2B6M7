@@ -22,3 +22,13 @@ const getUserInfo = (user) => {
 };
 getUserInfo({ name: "Walidur Tanjim" });
 getUserInfo({ name: "Walidur Rahman Tanjim", role: "Admin" });
+// This is not important. It's just only practice purpose (Type Narrowing with Generics)
+const getUserInfoGenerics = (user) => {
+    if ("role" in user) {
+        console.log(`${user.name} is a ${user.role}`);
+    }
+    else
+        console.log(`${user.name} is just a normal user`);
+};
+getUserInfoGenerics({ name: "Walidur Tanjim" });
+getUserInfoGenerics({ name: "Walidur Tanjim", role: "Admin" });
