@@ -1,24 +1,24 @@
 "use strict";
-// Type Guard or Type Narrowing
-// Narrowing: make smaller
+// // Type Guard or Type Narrowing
+// // Narrowing: make smaller
 Object.defineProperty(exports, "__esModule", { value: true });
-const add = (num1, num2) => {
-    if (typeof num1 === "number" && typeof num2 === "number") {
-        return num1 + num2;
+const add = (value1, vlaue2) => {
+    if (typeof value1 === "number" && typeof vlaue2 === "number") {
+        return value1 + vlaue2;
     }
     else
-        return num1.toString() + num2.toString();
+        return value1.toString() + vlaue2.toString();
 };
-const add1 = add(2, 2);
-const add2 = add(2, "2");
-const add3 = add("2", 2);
-const add4 = add("2", "2");
+const add1 = add(2, 3);
+const add2 = add("2", 3);
+const add3 = add(2, "3");
+const add4 = add("2", "3");
 const getUserInfo = (user) => {
-    if ('role' in user) {
-        console.log(`${user?.name} and his/her role is: ${user?.role}`);
+    if ("role" in user) {
+        console.log(`${user.name} is a ${user.role}`);
     }
     else
-        console.log(`${user?.name} is just a normal user.`);
+        console.log(`${user.name} is just a normal user`);
 };
-getUserInfo({ name: "Normal" });
-getUserInfo({ name: "Admin user", role: "Admin" });
+getUserInfo({ name: "Walidur Tanjim" });
+getUserInfo({ name: "Walidur Rahman Tanjim", role: "Admin" });
