@@ -56,3 +56,20 @@ class Student extends Person {
 const student1 = new Student("Walidur Tanjim", 25, "Mirpur, Dhaka");
 console.log(student1);
 student1.getStudy(8);
+// Teacher class
+class Teacher extends Person {
+    designation;
+    constructor(name, age, address, designation) {
+        super(name, age, address);
+        this.designation = designation;
+    }
+    ;
+    takeClass(value) {
+        console.log(`${this.name} take class ${value} hours.`);
+    }
+}
+;
+const teacher1 = new Teacher("Walidur Tanjim", 25, "Mirpur, Dhaka", "Senior Teacher");
+console.log(teacher1);
+teacher1.getStudy(10);
+teacher1.takeClass(3);
