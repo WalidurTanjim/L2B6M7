@@ -74,6 +74,6 @@ const getUserInfoWithFunctionGuard = (user) => {
 const student2 = new Student("Walidur Tanjim");
 const teacher2 = new Teacher("Mr. Teacher");
 const person2 = new Person("Normal Person");
-getUserInfoWithFunctionGuard(student1);
-getUserInfoWithFunctionGuard(teacher1);
-getUserInfoWithFunctionGuard(person1);
+getUserInfoWithFunctionGuard(student2);
+getUserInfoWithFunctionGuard(teacher2);
+getUserInfoWithFunctionGuard(person2);
