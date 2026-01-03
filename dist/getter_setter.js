@@ -18,11 +18,19 @@ class BankAccount {
     }
     ;
     // methods
-    updateBalance(value) {
+    // updateBalance(value: number): void {
+    //     this.balance = this.balance + value;
+    //     console.log(`Total balance is: ${this.balance}`);
+    // }
+    // setter: to add value
+    set updateBalance(value) {
         this.balance = this.balance + value;
-        console.log(`Total balance is: ${this.balance}`);
     }
-    getBalance() {
+    // getBalance(){
+    //     return this.balance;
+    // }
+    // getter: to get value
+    get getBalance() {
         return this.balance;
     }
 }
@@ -35,7 +43,11 @@ class StudentBankAccount extends BankAccount {
 }
 // instance
 const walidurTanjim = new BankAccount(123, 'Walidur Tanjim', 100000, "Savings");
-walidurTanjim.updateBalance(5700);
+// walidurTanjim.updateBalance(5700);
+// setter: update balance using setter
+walidurTanjim.updateBalance = 6000;
 const studentAcount = new StudentBankAccount(123, "Student Walid", 50000, "Savings");
 studentAcount.test();
-console.log(walidurTanjim.getBalance());
+// console.log(walidurTanjim.getBalance());
+// getter: get balance using getter
+console.log(walidurTanjim.getBalance);
