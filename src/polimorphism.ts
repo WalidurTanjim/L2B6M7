@@ -65,3 +65,7 @@ class Circle extends Shape {
     //     return Math.PI * 
     // }
 }
+
+// instance
+const circel1 = new Circle();
+console.log(circel1);
