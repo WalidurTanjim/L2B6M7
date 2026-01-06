@@ -67,5 +67,5 @@ class Circle extends Shape {
 }
 
 // instance
-const circel1 = new Circle();
-console.log(circel1);
+// const circel1 = new Circle();
+// console.log(circel1);
