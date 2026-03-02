@@ -52,6 +52,25 @@ const getUserInfo = (user) => {
     else
         user?.getSleep(7);
 };
-getUserInfo(person1);
-getUserInfo(student1);
-getUserInfo(teacher1);
+// getUserInfo(person1);
+// getUserInfo(student1);
+// getUserInfo(teacher1);
+// function guard [Smart way to use instanceof for type guard / type narrowing]
+const isStudent = (user) => {
+    return user instanceof Student;
+};
+const isTeacher = (user) => {
+    return user instanceof Teacher;
+};
+const getUserInfoWithFuncGuard = (user) => {
+    if (isStudent(user)) {
+        user?.doStudy(8);
+    }
+    else if (isTeacher(user)) {
+        user?.takeClass(5);
+    }
+    else {
+        user?.getSleep(7);
+    }
+};
+// getUserInfoWithFuncGuard(student1);
