@@ -17,15 +17,15 @@ class CounterWithoutStatic {
     }
     ;
 }
-const withoutStatic1 = new CounterWithoutStatic();
-const withoutStatic2 = new CounterWithoutStatic();
-console.log(withoutStatic1);
-console.log(withoutStatic1.increment());
-console.log(withoutStatic1.increment());
-console.log(withoutStatic1.decrement());
-console.log(withoutStatic2);
-console.log(withoutStatic2.increment());
-console.log(withoutStatic2.increment());
+// const withoutStatic1 = new CounterWithoutStatic();
+// const withoutStatic2 = new CounterWithoutStatic();
+// console.log(withoutStatic1);
+// console.log(withoutStatic1.increment());
+// console.log(withoutStatic1.increment());
+// console.log(withoutStatic1.decrement());
+// console.log(withoutStatic2);
+// console.log(withoutStatic2.increment());
+// console.log(withoutStatic2.increment());
 // CountWithStatic class
 class CountWithStatic {
     static count = 0;
@@ -42,13 +42,13 @@ class CountWithStatic {
     ;
 }
 ;
-console.log(CountWithStatic.increment());
-console.log(CountWithStatic.decrement());
-console.log(CountWithStatic.increment());
-console.log(CountWithStatic.increment());
-console.log(CountWithStatic.decrement());
-console.log(CountWithStatic.increment());
-console.log(CountWithStatic.increment());
-console.log(CountWithStatic.decrement());
-console.log(CountWithStatic.decrement());
-console.log(CountWithStatic.increment());
+// console.log(CountWithStatic.increment());
+// console.log(CountWithStatic.decrement());
+// console.log(CountWithStatic.increment());
+// console.log(CountWithStatic.increment());
+// console.log(CountWithStatic.decrement());
+// console.log(CountWithStatic.increment());
+// console.log(CountWithStatic.increment());
+// console.log(CountWithStatic.decrement());
+// console.log(CountWithStatic.decrement());
+// console.log(CountWithStatic.increment());
