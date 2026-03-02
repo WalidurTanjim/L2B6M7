@@ -40,7 +40,29 @@ class Teacher extends Person {
 };
 
 const teacher1 = new Teacher("Walidur Tanjim", 26, "Uttara, Dhaka", "Senior Backend Developer");
-teacher1.getStudy(7);
-teacher1.takeClass(2.5);
+// teacher1.getStudy(7);
+// teacher1.takeClass(2.5);
 
-console.log(teacher1);
+// console.log(teacher1);
+
+
+
+// Child class
+class Child extends Person {
+     dateOfBirth: string;
+
+     constructor(name: string, age: number, address: string, dateOfBirth: string) {
+          super(name, age, address);
+
+          this.dateOfBirth = dateOfBirth;
+     };
+
+     eatMilk(quantity: number): void {
+          console.log(`${this.name} eats milk ${quantity} times in a day.`);
+     };
+};
+
+const child1 = new Child("Walidur Tanjim", 1, "Uttara, Dhaka", "01-01-2025");
+// child1.getStudy(0);
+// child1.eatMilk(25);
+// console.log(child1);
