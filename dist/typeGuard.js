@@ -19,3 +19,13 @@ const getUserInfo = (user) => {
 // const getUserInfo1 = getUserInfo({ name: "Walidur Tanjim" });
 // const getUserInfo2 = getUserInfo({ name: "Walidur Rahman Tanjim", role: "Admin" });
 // console.log(getUserInfo1, getUserInfo2);
+// Type Guard with generics
+const getUserInfoGenerics = (user) => {
+    if ("role" in user) {
+        console.log(`${user?.name} is not a normal user. He/She is a ${user?.role}. [Gen]`);
+    }
+    else
+        console.log(`${user?.name} is just a normal user. [Gen]`);
+};
+getUserInfoGenerics({ name: "Walidur Tanjim" });
+getUserInfoGenerics({ name: "Walidur Rahman Tanjim", role: "Admin" });
