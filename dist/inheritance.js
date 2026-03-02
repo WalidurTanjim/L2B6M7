@@ -57,6 +57,6 @@ class Child extends Person {
 }
 ;
 const child1 = new Child("Walidur Tanjim", 1, "Uttara, Dhaka", "01-01-2025");
-child1.getStudy(0);
-child1.eatMilk(25);
-console.log(child1);
+// child1.getStudy(0);
+// child1.eatMilk(25);
+// console.log(child1);
