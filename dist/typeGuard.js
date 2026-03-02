@@ -27,5 +27,5 @@ const getUserInfoGenerics = (user) => {
     else
         console.log(`${user?.name} is just a normal user. [Gen]`);
 };
-getUserInfoGenerics({ name: "Walidur Tanjim" });
-getUserInfoGenerics({ name: "Walidur Rahman Tanjim", role: "Admin" });
+// getUserInfoGenerics({ name: "Walidur Tanjim" });
+// getUserInfoGenerics({ name: "Walidur Rahman Tanjim", role: "Admin" });
